@@ -38,4 +38,10 @@ class Artist
     #binding.pry
     puts @songs.collect{|s| s.name}
   end
+
+  def genres
+    self.songs.collect do |song|
+      song.genre
+    end 
+  end 
 end
